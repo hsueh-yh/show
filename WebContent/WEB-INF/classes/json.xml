@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+	
+
+<struts>
+
+
+	<!-- 获取location和model -->
+	<package name="option" extends="struts-default">
+		<action name="getOp" class="control.optionsAction" method="getOptions">
+			<!-- 定义三个逻辑视图和物理资源之间的映射 -->		
+			<result name="input">/welcome.jsp</result>
+			<result name="error">/welcome.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
+		
+		<action name="getDay" class="control.search" method="byDay">
+			<!-- 定义三个逻辑视图和物理资源之间的映射 -->	
+			<result name="input">/welcome.jsp</result>
+			<result name="error">/welcome.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	
+</struts>
