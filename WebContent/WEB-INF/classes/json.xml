@@ -23,6 +23,13 @@
 			<result name="success">/welcome.jsp</result>
 		</action>
 		
+		<action name="getGroup" class="control.search" method="byGroup">
+			<!-- 定义三个逻辑视图和物理资源之间的映射 -->	
+			<result name="input">/welcome.jsp</result>
+			<result name="error">/welcome.jsp</result>
+			<result name="success">/welcome.jsp</result>
+		</action>
+		
 	</package>
 	
 	
